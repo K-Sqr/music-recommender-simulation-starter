@@ -21,7 +21,7 @@ Update the STATUS line before every Composer session.
 - [ ] Committed with meaningful message
 
 ## Phase 4: Evaluation
-- [ ] Ran all 3 profiles, took terminal screenshots
+- [x] Ran all 3 profiles, took terminal screenshots
 - [x] Screenshots added to README.md
 - [x] Ran at least one experiment (e.g. doubled energy weight, halved genre weight)
 - [x] Experiment results noted in README.md "Experiments You Tried" section
