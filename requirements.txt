@@ -1,3 +1,4 @@
-pandas
-pytest
-streamlit
+anthropic>=0.39.0
+python-dotenv>=1.0.0
+tabulate>=0.9.0
+pytest>=7.0.0
