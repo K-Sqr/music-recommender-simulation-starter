@@ -1,0 +1,27 @@
+%% Music Recommender Simulation - Project 4 system architecture
+%% Paste this file into https://mermaid.live to render and export PNG.
+%% Save the exported file as assets/architecture.png so it shows up in README.md.
+
+flowchart LR
+    User([User CLI Input]) --> InputGuard[Input Validation Guardrail]
+    InputGuard -->|invalid| ErrorOut[Friendly Error Message]
+    InputGuard -->|valid| Agent[Claude Agent Loop / Mock Planner]
+
+    Agent <-->|retrieve top-k| KB[(RAG Knowledge Base<br/>data/knowledge_base.json)]
+    Agent -->|tool_use| Tool[recommend_songs Tool]
+    Tool --> Scorer[Weighted Scoring Engine<br/>genre / mood / mood_tags /<br/>energy / danceability /<br/>acousticness / popularity / decade]
+    Scorer --> Diversity[Artist Diversity Penalty]
+    Diversity --> Ranker[Top-K Ranker]
+    Ranker -->|tool_result| Agent
+
+    Agent --> OutGuard[Output Guardrail<br/>Explanation vs Score Consistency]
+    OutGuard --> Display[tabulate Output Table]
+    Display --> User
+
+    Logger[(logs/agent.log)]
+    Agent -.steps.-> Logger
+    OutGuard -.flags.-> Logger
+
+    Eval[eval.py Test Harness] -.drives.-> InputGuard
+    Eval -.audits.-> OutGuard
+    Eval -.reports.-> Report[Pass/Fail Summary Table]
