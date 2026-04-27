@@ -1,16 +1,21 @@
-id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
-1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18
-2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71
-3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10
-4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86
-5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05
-6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92
-7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89
-8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
-9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
-10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
-11,Desert Bloom,Saffron Sky,world,uplifting,0.64,102,0.74,0.68,0.44
-12,Basement Cipher,Grids & Wires,hip hop,focused,0.71,96,0.52,0.83,0.14
-13,Silver Strings,Norah Vale,classical,calm,0.18,58,0.47,0.21,0.97
-14,Golden Hour Tide,Marina South,r&b,romantic,0.57,88,0.79,0.72,0.49
-15,Iron Horizon,Black Atlas,metal,intense,0.95,168,0.36,0.51,0.03
+id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness,popularity,release_decade,mood_tags
+1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18,82,2020s,uplifting;summery;driving;feel-good
+2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71,64,2020s,study;late-night;mellow;focus
+3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10,71,2010s;2020s,driving;aggressive;cinematic
+4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86,57,2020s;2010s,study;rainy;calm;reading
+5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05,88,2020s,workout;hype;driving;party
+6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92,42,2020s,sleep;meditative;dreamy;calm
+7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89,55,2010s,acoustic;morning;mellow;cafe
+8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22,69,2010s,nostalgic;cinematic;late-night;driving
+9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78,61,2020s,study;mellow;deep-work;late-night
+10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35,74,2020s,summery;feel-good;party;uplifting
+11,Desert Bloom,Saffron Sky,world,uplifting,0.64,102,0.74,0.68,0.44,53,2010s;2020s,global;cultural;cinematic;dreamy
+12,Basement Cipher,Grids & Wires,hip hop,focused,0.71,96,0.52,0.83,0.14,76,2010s,deep-work;cinematic;moody;urban
+13,Silver Strings,Norah Vale,classical,calm,0.18,58,0.47,0.21,0.97,48,2000s,meditative;sleep;acoustic;reading
+14,Golden Hour Tide,Marina South,r&b,romantic,0.57,88,0.79,0.72,0.49,67,2010s,romantic;mellow;evening;dinner
+15,Iron Horizon,Black Atlas,metal,intense,0.95,168,0.36,0.51,0.03,72,2010s;2000s,aggressive;workout;driving;cinematic
+16,Old School Riff,Black Atlas,metal,intense,0.89,158,0.40,0.48,0.06,58,1990s;2000s,nostalgic;heavy;aggressive;driving
+17,Neon Boulevard,Voltline,synthwave,moody,0.68,104,0.52,0.70,0.19,63,1980s;2010s,nostalgic;late-night;cinematic;driving
+18,Garden of Mist,Saffron Sky,world,relaxed,0.45,86,0.63,0.55,0.71,49,2020s,global;cultural;mellow;dreamy
+19,Velvet Slow Dance,Marina South,r&b,romantic,0.46,76,0.74,0.65,0.58,71,2020s,romantic;evening;sensual;mellow
+20,Library of Echoes,Norah Vale,classical,calm,0.22,62,0.51,0.18,0.95,44,2010s,reading;sleep;meditative;acoustic
