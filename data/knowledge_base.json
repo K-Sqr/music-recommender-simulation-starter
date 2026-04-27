@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "description": "Local RAG corpus of artist, genre, mood, and decade context. Retrieved snippets are injected into the agent's planning prompt so weight choices are grounded in real(ish) musical context, not just keyword matching.",
+  "documents": [
+    {
+      "id": "genre.lofi",
+      "type": "genre",
+      "name": "lofi",
+      "text": "Lofi hip hop blends mellow drum loops, jazz samples, and tape-style imperfections. It is widely used for studying, deep work, late-night reading, and rainy-day relaxation. Tempos sit in the 70-95 BPM range with low to moderate energy."
+    },
+    {
+      "id": "genre.pop",
+      "type": "genre",
+      "name": "pop",
+      "text": "Modern pop is dance-forward, vocal-driven, and chart-oriented. It tends to be high energy, high valence, and high danceability with broad appeal for parties, summer playlists, and feel-good moments."
+    },
+    {
+      "id": "genre.rock",
+      "type": "genre",
+      "name": "rock",
+      "text": "Rock spans driving guitar-led tracks from arena anthems to alternative grit. Tempos cluster around 110-160 BPM with intense energy. Good for workouts, road trips, and cathartic moods."
+    },
+    {
+      "id": "genre.metal",
+      "type": "genre",
+      "name": "metal",
+      "text": "Metal is the loudest, heaviest end of the rock family. Distorted guitars, aggressive drums, and tempos above 140 BPM are common. Old-school metal fans often look for nostalgic 1990s and 2000s heavy riffs."
+    },
+    {
+      "id": "genre.jazz",
+      "type": "genre",
+      "name": "jazz",
+      "text": "Jazz favours improvisation, swing rhythms, and warm acoustic instrumentation. Mellow jazz works well in cafes, mornings, and dinner settings; it scores high on acousticness and relaxed mood."
+    },
+    {
+      "id": "genre.synthwave",
+      "type": "genre",
+      "name": "synthwave",
+      "text": "Synthwave revives 1980s analog synth aesthetics with neon, late-night, and cinematic vibes. Mid-tempo (100-120 BPM), moody, and great for night drives or nostalgic playlists."
+    },
+    {
+      "id": "genre.ambient",
+      "type": "genre",
+      "name": "ambient",
+      "text": "Ambient music is texture-first and slow-moving. It is meant for sleep, meditation, focus, and atmosphere rather than active listening. Energy is very low, valence is neutral."
+    },
+    {
+      "id": "genre.classical",
+      "type": "genre",
+      "name": "classical",
+      "text": "Classical music includes orchestral, chamber, and solo instrument works. Solo strings and piano pieces tend to be very acoustic, calm, and ideal for reading, sleep, and quiet evenings."
+    },
+    {
+      "id": "genre.rnb",
+      "type": "genre",
+      "name": "r&b",
+      "text": "R&B is groove-driven and vocal-centric, often romantic or sensual. Mid-tempo tracks fit dinner, slow-dance, and evening listening; they typically score moderate-to-high on danceability."
+    },
+    {
+      "id": "genre.hiphop",
+      "type": "genre",
+      "name": "hip hop",
+      "text": "Hip hop centres rhythm, lyricism, and bass. Boom-bap and lo-fi hip hop work for focus and study, while trap and drill skew higher energy for hype and workouts."
+    },
+    {
+      "id": "genre.world",
+      "type": "genre",
+      "name": "world",
+      "text": "World music is an umbrella for cross-cultural and global styles. Strong picks for uplifting, cinematic, or culturally curious listening sessions; tempos and moods vary widely."
+    },
+    {
+      "id": "genre.indie_pop",
+      "type": "genre",
+      "name": "indie pop",
+      "text": "Indie pop blends pop hooks with alternative production. It often hits the 'feel-good' and 'summery' tags while keeping energy moderate."
+    },
+    {
+      "id": "mood.chill",
+      "type": "mood",
+      "name": "chill",
+      "text": "Chill describes low-energy, relaxed listening. Common contexts: studying late at night, reading, rainy afternoons. Pairs well with lofi, ambient, and acoustic jazz. Target energy roughly 0.25-0.45."
+    },
+    {
+      "id": "mood.intense",
+      "type": "mood",
+      "name": "intense",
+      "text": "Intense music is high-arousal: workouts, gym sessions, road racing, cathartic listening. Pairs with rock, metal, and high-BPM pop. Target energy roughly 0.85-1.0."
+    },
+    {
+      "id": "mood.focused",
+      "type": "mood",
+      "name": "focused",
+      "text": "Focused listening supports deep work and study. Lyrics are minimal or repetitive, energy is mid-low, and tempo is steady. Lofi, instrumental hip hop, and ambient excel here."
+    },
+    {
+      "id": "mood.romantic",
+      "type": "mood",
+      "name": "romantic",
+      "text": "Romantic music suits dinners, slow-dance, and intimate evenings. Mid-tempo R&B, soul, and acoustic ballads work well. Valence is positive, energy moderate."
+    },
+    {
+      "id": "mood.uplifting",
+      "type": "mood",
+      "name": "uplifting",
+      "text": "Uplifting tracks raise mood without becoming aggressive. World music, indie pop, and bright pop often hit this tag. Good for morning routines and motivational listening."
+    },
+    {
+      "id": "mood.moody",
+      "type": "mood",
+      "name": "moody",
+      "text": "Moody music is reflective and slightly dark without being aggressive. Synthwave, alt-rock, and cinematic soundtracks fit. Great for night drives and introspective moments."
+    },
+    {
+      "id": "context.study_late_night",
+      "type": "context",
+      "name": "study late at night",
+      "text": "For late-night studying users typically want chill or focused mood, low energy (0.25-0.45), high acousticness, and mellow tags like 'study', 'late-night', or 'mellow'. Lofi and ambient are the strongest matches."
+    },
+    {
+      "id": "context.workout",
+      "type": "context",
+      "name": "workout",
+      "text": "For workouts users want intense mood, high energy (0.85-1.0), high danceability, and tags like 'workout', 'hype', or 'driving'. Pop, rock, and metal dominate."
+    },
+    {
+      "id": "context.dinner",
+      "type": "context",
+      "name": "dinner",
+      "text": "For dinners and evenings users want romantic or relaxed moods, mid-low energy (0.4-0.6), and tags like 'dinner', 'evening', or 'mellow'. R&B, jazz, and indie acoustic perform well."
+    },
+    {
+      "id": "context.road_trip",
+      "type": "context",
+      "name": "road trip",
+      "text": "Road trips and night drives reward 'driving' and 'cinematic' tags. Synthwave, rock, and high-energy pop are common picks. Target energy 0.6-0.9."
+    },
+    {
+      "id": "decade.1980s",
+      "type": "decade",
+      "name": "1980s",
+      "text": "The 1980s are associated with synth-pop, early synthwave, glam rock, and arena pop. Listeners requesting 'retro' or 'old-school synth' often want this era."
+    },
+    {
+      "id": "decade.1990s",
+      "type": "decade",
+      "name": "1990s",
+      "text": "The 1990s span classic alt-rock, grunge, golden-age hip hop, and early electronic. 'Old-school' rock and metal listeners often anchor here."
+    },
+    {
+      "id": "decade.2000s",
+      "type": "decade",
+      "name": "2000s",
+      "text": "The 2000s mix nu-metal, pop-punk, R&B, and early indie. Useful era for nostalgic and 'old-school' requests."
+    },
+    {
+      "id": "decade.2010s",
+      "type": "decade",
+      "name": "2010s",
+      "text": "The 2010s saw EDM, modern pop, indie pop, and trap rise to dominance. Most contemporary playlist staples sit here."
+    },
+    {
+      "id": "decade.2020s",
+      "type": "decade",
+      "name": "2020s",
+      "text": "The 2020s emphasise lofi, hyperpop, bedroom pop, and genre-blending. Listeners after 'modern' or 'current' picks default here."
+    },
+    {
+      "id": "artist.neon_echo",
+      "type": "artist",
+      "name": "Neon Echo",
+      "text": "Neon Echo is a synthwave-leaning pop project known for sun-soaked, summery tracks and late-night neon drives. Catalogue spans pop and synthwave."
+    },
+    {
+      "id": "artist.loroom",
+      "type": "artist",
+      "name": "LoRoom",
+      "text": "LoRoom is a lofi producer who specialises in study and deep-work loops. Tracks emphasise mellow drums and warm tape textures."
+    },
+    {
+      "id": "artist.voltline",
+      "type": "artist",
+      "name": "Voltline",
+      "text": "Voltline blends rock and synthwave; their work tends to be cinematic, driving, and slightly aggressive. Strong fit for road trips."
+    },
+    {
+      "id": "artist.black_atlas",
+      "type": "artist",
+      "name": "Black Atlas",
+      "text": "Black Atlas is a metal act with old-school 1990s and 2000s heavy influences. Heavier riffs and faster tempos are their signature."
+    },
+    {
+      "id": "artist.marina_south",
+      "type": "artist",
+      "name": "Marina South",
+      "text": "Marina South records mid-tempo R&B with romantic, evening-oriented production. Frequent picks for dinner and slow-dance contexts."
+    },
+    {
+      "id": "artist.norah_vale",
+      "type": "artist",
+      "name": "Norah Vale",
+      "text": "Norah Vale composes solo classical pieces with very high acousticness. Best for reading, sleep, and quiet contemplation."
+    },
+    {
+      "id": "artist.saffron_sky",
+      "type": "artist",
+      "name": "Saffron Sky",
+      "text": "Saffron Sky makes uplifting world music with cross-cultural instrumentation. Tracks pair global textures with cinematic arrangement."
+    }
+  ]
+}
