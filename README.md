@@ -72,10 +72,6 @@ flowchart LR
     Eval -.audits.-> OutGuard
 ```
 
-The Mermaid source is at [`assets/architecture.mmd`](assets/architecture.mmd).
-Paste it into <https://mermaid.live> to render and export a PNG to
-`assets/architecture.png`.
-
 ### Data flow in plain English
 
 1. The user types a query and picks a menu option.
