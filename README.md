@@ -1,6 +1,6 @@
 # Music Recommender Simulation -- Applied AI System (Project 4)
 
-> Loom walkthrough: **[Loom walkthrough link]**
+> Loom walkthrough: **[[Loom walkthrough link](https://youtu.be/PshbBndcVLA)]**
 
 ## Base Project
 
